@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+   
+    <link rel="import" href="warnings.html"/>
+</head>
+
+<body>
+	<iframe src="warnings.html" scrolling="no" style=" width: 550px; height: 500px;  overflow: hidden; border: none;" ></iframe>
+	<!-- <div id="includedContent"></div>   
+ -->
+    <script>
+    var link = document.querySelector('link[rel="import"]');
+    var content = link.import;
+
+    // Grab DOM from warning.html's document.
+    var el = content.querySelector('.warning');
+
+    document.body.appendChild(el.cloneNode(true));
+    </script>
+
+</body>
+</html>
